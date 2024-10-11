@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panda Card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+        }
+
+        .card-container {
+            border:4px solid black;
+            width: 300px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .card-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .panda-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .name {
+            font-size: 22px;
+            font-weight: bold;
+            color: #8ac926;
+            margin: 10px 0;
+        }
+
+        .courses {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 5px;
+        }
+
+        .year {
+            font-size: 16px;
+            color: black;
+            margin-bottom: 15px;
+        }
+
+        .stars {
+            color: #FFD700;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card-container">
+        <h2 class="card-title">Panda Card</h2>
+        <img class="panda-image" src="panda.jpg" alt="Panda Image">
+        <p class="name">John Doe</p>
+        <p class="courses">Computer Science 1</p>
+        <p class="courses">Computer Science 2</p>
+        <p class="year">Year: 3</p>
+        <div class="stars">
+            ★★★★★
+        </div>
+    </div>
+
+</body>
+</html>
