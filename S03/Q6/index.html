@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Store</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background: #efe9e9;
+      }
+
+      .mi-navbar {
+        background-color: #fff;
+        border-bottom: 1px solid #ebebeb;
+        padding: 10px 0;
+      }
+
+      .navbar-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo img {
+        height: 40px;
+      }
+
+      .nav-links {
+        list-style: none;
+        display: flex;
+        flex-grow: 1;
+        justify-content: center;
+        margin-left: 20px;
+      }
+
+      .nav-links li {
+        margin: 0 15px;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        color: #333;
+        font-size: 16px;
+        font-weight: 500;
+        transition: color 0.3s ease;
+      }
+
+      .nav-links a:hover {
+        color: #ff6700;
+      }
+
+      .nav-icons a {
+        color: #333;
+        text-decoration: none;
+        margin-left: 15px;
+        font-size: 24px;
+        transition: color 0.3s ease;
+      }
+
+      .nav-icons a:hover {
+        color: #ff6700;
+      }
+
+      .img2 {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3rem;
+      }
+      .img3 {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3rem;
+      }
+      .product-card {
+        width: 300px;
+        height: 300px;
+        border: 2px solid #998e8e;
+        padding: 20px;
+        text-align: left;
+        background: #ffffff;
+      }
+
+      .product-card img {
+        width: 100px;
+        height: auto;
+        margin-top: 10px;
+      }
+
+      .product-title {
+        font-size: 26px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: #333;
+        
+      }
+
+      .discount-badge {
+        display: inline-block;
+        background-color: #ff6700;
+        color: white;
+        font-size: 12px;
+        padding: 2px 5px;
+        border-radius: 3px;
+        margin-bottom: 10px;
+      }
+
+      .price {
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 10px;
+        color: #000;
+      }
+
+      .original-price {
+        color: #999;
+        text-decoration: line-through;
+        font-size: 14px;
+      }
+
+      .lower-box {
+        display: flex;
+        justify-content: space-between;
+      }
+      .lower-box img{
+        height: auto;
+        width: 175px;
+      }
+      .phone-items, .tv-items {
+        display: flex;
+        justify-content: center;
+        gap: 4rem;
+      }
+
+      .img4 {
+        display: flex;
+        justify-content: center;
+        margin: 3rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="mi-navbar">
+      <div class="navbar-container">
+        <div class="logo">
+          <a href="#">
+            <img src="logo.png" alt="Mi Logo" />
+          </a>
+        </div>
+
+        <ul class="nav-links">
+          <li style><a href="#">Store</a></li>
+          <li><a href="#">Phones</a></li>
+          <li><a href="#">Tablets</a></li>
+          <li><a href="#">TV & Smart Home</a></li>
+          <li><a href="#">Smart Watch & Audio</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+
+        <div class="nav-icons">
+          <a href="#"><span class="material-icons">search</span></a>
+          <a href="#"><span class="material-icons">shopping_cart</span></a>
+          <a href="#"><span class="material-icons">person</span></a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="hero">
+    <!-- Main Banner -->
+      <div class="img2">
+        <img src="img2.jpg" alt="image" />
+      </div>
+      <!-- phone banner -->
+      <div class="img3">
+        <img src="img3..webp" alt="" />
+      </div>
+      <!-- Phone items -->
+      <div class="phone-items">
+        <div class="product-card">
+          <div class="product-title">Redmi 13C</div>
+          <div class="discount-badge">39% off</div>
+
+          <div class="lower-box">
+            <div class="box-price">
+              <div class="price">₹8,499</div>
+              <div class="original-price">₹13,999</div>
+            </div>
+            <img src="phone1.jpeg" alt="Redmi 13C" />
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-title">Redmi 12</div>
+          <div class="discount-badge">42% off</div>
+
+          <div class="lower-box">
+            <div class="box-price">
+              <div class="price">₹8,499</div>
+              <div class="original-price">₹13,999</div>
+            </div>
+            <img src="phone2.jpeg" alt="Redmi 13C" />
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-title">Xiaomi 14</div>
+          <div class="discount-badge">49% off</div>
+
+          <div class="lower-box">
+            <div class="box-price">
+              <div class="price">₹28,499</div>
+              <div class="original-price">₹54,999</div>
+            </div>
+            <img src="phone3.jpeg" alt="Xiaomi 14" />
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-title">Redmi Note 13 Pro</div>
+          <div class="discount-badge">37% off</div>
+
+          <div class="lower-box">
+            <div class="box-price">
+              <div class="price">₹18,499</div>
+              <div class="original-price">₹27,999</div>
+            </div>
+            <img src="phone4.jpeg" alt="Redmi Note 13 Pro" />
+          </div>
+        </div>
+      </div>
+      <!-- TV Banner -->
+      <div class="img4">
+        <img src="tvdeals.webp" alt="" />
+      </div>
+      <!-- TV items -->
+      <div class="tv-items">
+        <div class="product-card">
+            <div class="product-title">Redmi 3 series</div>
+            <div class="discount-badge">42% off</div>
+  
+            <div class="lower-box">
+              <div class="box-price">
+                <div class="price">₹28,499</div>
+                <div class="original-price">₹53,999</div>
+              </div>
+              <img src="tv1.jpeg" alt="Redmi 13C" />
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-title">Redmi N</div>
+            <div class="discount-badge">39% off</div>
+  
+            <div class="lower-box">
+              <div class="box-price">
+                <div class="price">₹18,499</div>
+                <div class="original-price">₹33,999</div>
+              </div>
+              <img src="tv2.jpeg" alt="Redmi 13C" />
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-title">Redmi 44D Series</div>
+            <div class="discount-badge">39% off</div>
+  
+            <div class="lower-box">
+              <div class="box-price">
+                <div class="price">₹58,499</div>
+                <div class="original-price">₹73,999</div>
+              </div>
+              <img src="tv3.jpeg" alt="Redmi 13C" />
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-title">Redmi QLED</div>
+            <div class="discount-badge">49% off</div>
+  
+            <div class="lower-box">
+              <div class="box-price">
+                <div class="price">₹68,499</div>
+                <div class="original-price">₹113,999</div>
+              </div>
+              <img src="tv4.jpeg" alt="Redmi 13C" />
+            </div>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
