@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Left-Side Navbar</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        color: rgba(0, 0, 0, 0.822);
+        background-color: #e3e3e3;
+      }
+
+      .navbar {
+        width: 85px;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        height: 100vh;
+      }
+
+      .navbar a {
+        padding: 15px;
+        text-align: left;
+        text-decoration: none;
+        font-size: 14px;
+        color: rgb(0, 0, 0);
+        display: block;
+        transition: background-color 0.3s;
+        margin-top: 2rem;
+      }
+
+      .navbar a img {
+        width: 35px;
+        height: 25px;
+      }
+
+      .navbar a:hover {
+        background-color: #ffdd00;
+      }
+
+      .logo {
+        height: 150px;
+      }
+      .hero {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding-top: 5rem;
+      }
+
+      .left-box h1 {
+        font-size: 4rem;
+        margin-bottom: 2rem;
+        margin-left:4rem;
+      }
+      .left-box h2 {
+        font-size: 3rem;
+        margin-left:4rem;
+      }
+      .right-box h1 {
+        font-size: 3rem;
+        margin-bottom: 3rem;
+      }
+      .left-box {
+        padding-left: 4rem;
+      }
+      .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 2rem;
+        margin-left: 4rem;
+        margin-bottom: 2rem;
+      }
+
+      .buttons button{
+        background-color: #f0f0f0b9; 
+        color: rgb(0, 0, 0);
+        padding: 12px 20px;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+      }
+
+      .buttons button:hover {
+        background-color: #fff204;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      .form {
+            width: 420px;
+            padding: 4rem;
+        }
+
+        .form label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .form input[type="email"],
+        .form input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            background-color: #fff;
+        }
+        .form input::placeholder {
+            font-size: 14px;
+            color: #aaa;
+        }
+
+        .register{
+            margin-left: 5rem;
+            width:300px;
+            height:55px;
+            background-color: #333333;
+            color:white;
+        }
+        .right-box button{
+            margin:6rem;
+        }
+        .login{
+            width:100%;
+            height:40px;
+
+        }
+        .right-box h2{
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+        .right-box p{
+            font-size: 1.15rem;
+            padding:1rem;
+        }
+        .button-fb{
+            display:flex;
+            gap:2rem;
+        }
+        .button-fb img{
+            height:25px;
+            width:25px
+        }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar section -->
+    <div class="navbar">
+      <img class="logo" src="maggilogo.png" alt="" />
+      <a href="#recipes"><img src="recipes.svg" alt="" />Recipes</a>
+      <a href="#maggi"><img src="maggi.svg" alt="" />Maggi</a>
+      <a href="#menu"><img src="menu.svg" alt="" />MyMenu Plan</a>
+      <a href="#search"><img src="search.svg" alt="" />Search</a>
+      <a href="#login"><img src="login.svg" alt="" />Login</a>
+    </div>
+    <div class="hero">
+      <!-- Main content -->
+      <div class="left-box">
+        <h1>My Maggi</h1>
+        <h2>Welcome Back!</h2>
+
+        <div class="buttons">
+          <button class="button-fb"><img src="fb.png" alt=""> Sign in with facebook</button>
+          <button class="button-fb"> <img src="google.png" alt="">Sign in with google</button>
+        </div>
+
+        <form class="form" action="">
+          <label class="email" for=""
+            >Email
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter your email address here*"
+            />
+          </label>
+          <label for="" class="password"
+            >Password
+            <input
+              type="password"
+              name="password"
+              placeholder="Enter your password"
+            />
+          </label>
+          <button class="login"> &#11166Login to email</button>
+        </form>
+      </div>
+      <hr />
+      <div class="right-box">
+        <h1>Not registered yet?</h1>
+        <button class="register">&#11166 Register</button>
+        <h2>Join Maggi Today!</h2>
+        <div class="para">
+            <p>&#9989 Your personal newsletter with exciting recipes and ideas</p>
+            <p>&#9989 Personalize your newsletter to your preferances</p>
+            <p>&#9989 Get to know about Maggi Products</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
