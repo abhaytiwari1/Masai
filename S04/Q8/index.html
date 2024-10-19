@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masai School</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            margin-top: 5px;
+        }
+
+        nav img {
+            height: 50px;
+            width: 130px;
+            margin-left: 3rem;
+        }
+
+        .btn1 {
+            height: 40px;
+            width: 100px;
+            border-radius: 8px;
+            border: none;
+            font-size: 18px;
+            background-color: rgb(222, 237, 250);
+            cursor: pointer;
+            margin-right: 3rem;
+            margin-left: 3rem;
+            transition: background-color 0.3s;
+        }
+
+        .btn1:hover {
+            background-color: rgb(173, 216, 230); 
+        }
+
+        .btn2 {
+            height: 40px;
+            width: 100px;
+            border-radius: 8px;
+            border: 1px solid red;
+            color: red;
+            font-size: 10px;
+            background-color: transparent;
+            cursor: pointer;
+            margin-right: 3rem;
+            margin-left: 3rem;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .btn2:hover {
+            background-color: red;
+            color: white;
+        }
+
+        .logo {
+            display: flex;
+        }
+
+        .nav-link {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-link ul {
+            display: flex;
+            gap: 15px;
+            list-style-type: none;
+        }
+
+        .nav-link a {
+            text-decoration: none;
+            color: black;
+            font-size: 15px;
+        }
+
+        .nav-link a:hover {
+            color: red;
+        }
+
+        hr{
+            opacity: 0.3;
+        }
+
+        .hero{
+            display: flex;
+            justify-content: space-between;
+            padding:100px;
+        }
+
+        .hero h1{
+            font-size: 3rem;
+            margin-bottom:1rem;
+            font-weight: 800;
+            color: rgb(110 113 204);
+        }
+
+        .hero p {
+            font-size:20px;
+            font-weight: bold;
+            margin-bottom:1rem;
+        }
+
+        .btn3{
+            background-color: rgb(237 3 49);
+            width:145px;
+            height:48px;
+            border-radius:8px;
+            color:white;
+            font-size:17px;
+            font-weight: 700;
+        }
+
+        .video iframe {
+        width: 500px;
+        height: 250px;
+        border-radius:8px;
+        }
+
+        .card{
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items: center;
+            background-color: rgb(52 112 228);
+            padding:30px;
+            text-align: center;
+            color:white;
+            font-weight: 800;
+        }
+        .section1{
+            padding:10px;
+            margin-bottom:40px;
+        }
+        .section2{
+            display: flex;
+            gap:380px;
+            padding:15px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.webp" alt="Masai Logo">
+            <button class="btn1">Courses &#x25BC;</button>
+        </div>
+
+        <div class="nav-link">
+            <ul>
+                <li><a href="#">SCHOLARSHIP</a></li>
+                <li><a href="#" style="color: red;">SUCCESS STORIES</a></li>
+                <li><a href="#">EVENTS</a></li>
+                <li><a href="#">HIRE FROM US</a></li>
+                <li><a href="#">FEES</a></li>
+            </ul>
+            <button class="btn2">REGISTER</button>
+        </div>
+    </nav>
+    <hr>
+
+    <div class ="hero">
+        <div>
+            <h1>Proof that dreams do</h1>
+            <h1>come true</h1>
+            <p>A testament to what's possible</p>
+            <button class="btn3">APPLY NOW</button>
+        </div>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0867JeIfyLY?si=YoW5Bxpn8yCmyAc0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="card">
+
+        <div class="section1">
+            <h1>How is Masai Creating an Impact?</h1>
+            <p>6000+ students placed across 5000+ companies</p>
+        </div>
+
+        <div class="section2">
+            <div>
+                <h1>5000+</h1>
+                <div class="para2">
+                    <p>Hiring Partners</p>
+                </div>
+            </div>
+
+            <div>
+                <h1>6.1 LPA*</h1>
+                <div class="para2">
+                    <p>Average CTC</p>
+                </div>
+            </div>
+
+            <div>
+                <h1>8,000+</h1>
+                <p>Currently Enrolled Students</p>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styling a Table</title>
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px auto;
+        border: 2px solid black;
+        font-weight: bold;
+      }
+      th{
+        background-color:rgb(198, 198, 198);
+        font-size: 25px;
+        font-style:italic;
+      }
+      
+      th,td {
+        padding: 10px;
+        border: 1px solid black;
+      }
+
+       tr:nth-child(2) td,
+       tr:nth-child(6) td,
+       tr:nth-child(10) td {
+        font-size:25px;
+        font-weight: bold;
+        font-style: italic;
+      }
+
+       tr:nth-child(10) td,tr:nth-child(5) td,tr:nth-child(7) td {
+        color: green;
+      }
+
+       tr:last-child td {
+        background-color: yellow;
+        font-weight: bold;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div>
+      <table>
+        <tr>
+          <th>Product Name</th>
+          <th>Quantity</th>
+          <th>Price</th>
+        </tr>
+        <tr>
+          <td>Product 1</td>
+          <td>1</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>Product 2</td>
+          <td>2</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>Product 3</td>
+          <td>3</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>Product 4</td>
+          <td>4</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>Product 5</td>
+          <td>5</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>Product 6</td>
+          <td>6</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>Product 7</td>
+          <td>7</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>Product 8</td>
+          <td>8</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>Product 9</td>
+          <td>9</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>Product 10</td>
+          <td>10</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td colspan="2">Sum</td>
+          <td>$80</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

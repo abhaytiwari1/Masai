@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: black;
+            height:100vh;
+            overflow: hidden;
+        }
+
+        .cards{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            padding:4rem;
+            
+        }
+
+        .card1{
+            border-radius: 8px;
+            height:250px;
+            width:200px;
+            background-color: rgb(252, 241, 149);
+            opacity: 0.8;
+            cursor: pointer;
+        }
+
+        .card2{
+            border-radius: 5px;
+            height:250px;
+            width:200px;
+            background-color: rgb(255, 83, 238);
+            opacity: 0.8;
+            cursor: pointer;
+        }
+
+        .card3{
+            border-radius: 5px;
+            height:250px;
+            width:200px;
+            background-color: rgb(255, 74, 74);
+            opacity: 0.8;
+            cursor: pointer;
+        }
+
+        .card4{
+            border-radius: 5px;
+            height:250px;
+            width:200px;
+            background-color: rgb(87, 190, 44);
+            opacity: 0.8;
+            cursor: pointer;
+        }
+
+        .card1:hover{
+            opacity: 1;
+        }
+        .card2:hover{
+            opacity: 1;
+        }
+        .card3:hover{
+            opacity: 1;
+        }
+        .card4:hover{
+            opacity: 1;
+        }
+
+        h1{
+            color:rgb(205, 205, 205);
+            text-align: center;
+            margin:3rem 3rem;
+            font-size: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>CARDS</h1>
+    </div>
+    <div class ="cards">
+        <div class="card1"></div>
+        <div class="card2"></div>
+        <div class="card3"></div>
+        <div class="card4"></div>
+    </div>
+</body>
+</html>
